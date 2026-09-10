@@ -1,27 +1,14 @@
 import json
 import os
-import sys
-import time
-import warnings
 from pathlib import Path
 from collections import defaultdict
 from dotenv import load_dotenv
+
 from google import genai
-from google.genai import types
-
-# Reconfigure console encoding for Windows emojis
-if sys.platform == "win32":
-    try:
-        sys.stdout.reconfigure(encoding="utf-8")
-        sys.stderr.reconfigure(encoding="utf-8")
-    except AttributeError:
-        pass
-
-# Suppress harmless warnings
-warnings.filterwarnings("ignore")
 
 # Load environment variables from .env
 load_dotenv()
+
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -76,41 +63,61 @@ def load_jsonl(path):
 
 
 def build_conversation_index(path):
+
     conversations = {}
+
     with open(path, "r", encoding="utf-8") as f:
         for line in f:
+
             if not line.strip():
                 continue
+
             conversation = json.loads(line)
-            conversations[str(conversation["conversation_id"])] = conversation
+
+            conversations[
+                str(conversation["conversation_id"])
+            ] = conversation
+
     return conversations
 
 
 def format_conversation(conversation, target_tweet_id):
+
     lines = []
+
     for message in conversation.get("messages", []):
+
         speaker = (
             "CUSTOMER"
             if message.get("inbound") is True
             else "AMAZON SUPPORT"
         )
+
         marker = ""
+
         if str(message.get("tweet_id")) == str(target_tweet_id):
             marker = "  <-- TARGET MESSAGE"
 
         text = message.get("text", "").strip()
-        lines.append(f"{speaker}{marker}: {text}")
+
+        lines.append(
+            f"{speaker}{marker}: {text}"
+        )
+
     return "\n".join(lines)
 
 
-def classify_batch(client, batch, max_retries: int = 5):
+def classify_batch(client, batch):
+
     taxonomy = "\n".join(
         f"- {name}: {description}"
         for name, description in INTENTS.items()
     )
 
     messages_text = []
+
     for i, item in enumerate(batch):
+
         messages_text.append(
             f"""
 ITEM {i}
@@ -164,54 +171,38 @@ Each element must have:
 {''.join(messages_text)}
 """
 
-    for attempt in range(1, max_retries + 1):
-        try:
-            response = client.models.generate_content(
-                model=MODEL,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    temperature=0.0,
-                ),
-            )
-            text = response.text.strip()
-            # Remove markdown fences if returned
-            if text.startswith("```"):
-                text = text.replace("```json", "").replace("```", "").strip()
-            data = json.loads(text)
-            if isinstance(data, dict) and "items" in data:
-                data = data["items"]
-            return data
-        except Exception as e:
-            err_str = str(e)
-            if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
-                wait_sec = 10 * attempt
-                print(f"    [Rate limit 429] Waiting {wait_sec}s (attempt {attempt}/{max_retries})...", flush=True)
-                time.sleep(wait_sec)
-            else:
-                print(f"    [Error] {e} (attempt {attempt}/{max_retries})", flush=True)
-                time.sleep(2)
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=prompt
+    )
 
-    return []
+    text = response.text.strip()
+
+    # Remove markdown fences if Gemini returns them.
+    if text.startswith("```"):
+        text = text.replace("```json", "")
+        text = text.replace("```", "")
+        text = text.strip()
+
+    return json.loads(text)
 
 
 def main():
+
     api_key = os.getenv("GEMINI_API_KEY")
 
     if not api_key:
         raise RuntimeError(
-            "GEMINI_API_KEY environment variable is not set. Please check your .env file."
+            "GEMINI_API_KEY environment variable is not set."
         )
 
     client = genai.Client(api_key=api_key)
 
-    if not CLASSIFIED_FILE.exists():
-        raise FileNotFoundError(f"Missing classified file: {CLASSIFIED_FILE}")
-    if not CONVERSATIONS_FILE.exists():
-        raise FileNotFoundError(f"Missing conversations file: {CONVERSATIONS_FILE}")
-
     classified = load_jsonl(CLASSIFIED_FILE)
-    conversations = build_conversation_index(CONVERSATIONS_FILE)
+
+    conversations = build_conversation_index(
+        CONVERSATIONS_FILE
+    )
 
     unclear = [
         item
@@ -219,32 +210,56 @@ def main():
         if item.get("intent") == "unclear"
     ]
 
-    print("=" * 70, flush=True)
-    print("CONTEXT-AWARE UNCLEAR RECLASSIFICATION", flush=True)
-    print("=" * 70, flush=True)
+    print("=" * 70)
+    print("CONTEXT-AWARE UNCLEAR RECLASSIFICATION")
+    print("=" * 70)
 
-    print(f"Total classified records: {len(classified):,}", flush=True)
-    print(f"Unclear records:          {len(unclear):,}", flush=True)
+    print(f"Total classified records: {len(classified):,}")
+    print(f"Unclear records:          {len(unclear):,}")
 
     prepared = []
+
     for item in unclear:
-        conversation = conversations.get(str(item["conversation_id"]))
+
+        conversation = conversations.get(
+            str(item["conversation_id"])
+        )
+
         if conversation is None:
-            print(f"WARNING: Conversation not found: {item['conversation_id']}", flush=True)
+
+            print(
+                f"WARNING: Conversation not found: "
+                f"{item['conversation_id']}"
+            )
+
             continue
 
-        context = format_conversation(conversation, item["tweet_id"])
+        context = format_conversation(
+            conversation,
+            item["tweet_id"]
+        )
+
         prepared.append({
             **item,
             "conversation_context": context
         })
 
-    # Resume support
+    # Resume support.
     already_done = set()
+
     if OUTPUT_FILE.exists():
+
         existing = load_jsonl(OUTPUT_FILE)
-        already_done = {str(item["tweet_id"]) for item in existing}
-        print(f"Already reclassified:     {len(already_done):,}", flush=True)
+
+        already_done = {
+            str(item["tweet_id"])
+            for item in existing
+        }
+
+        print(
+            f"Already reclassified:     "
+            f"{len(already_done):,}"
+        )
 
     remaining = [
         item
@@ -252,53 +267,92 @@ def main():
         if str(item["tweet_id"]) not in already_done
     ]
 
-    print(f"Remaining:                 {len(remaining):,}", flush=True)
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    print(
+        f"Remaining:                 "
+        f"{len(remaining):,}"
+    )
 
-    with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
-        for start in range(0, len(remaining), BATCH_SIZE):
-            batch = remaining[start : start + BATCH_SIZE]
-            current_progress = start + len(already_done) + len(batch)
-            print(
-                f"[{current_progress}/{len(prepared)}] Classifying batch of {len(batch)}...",
-                flush=True
+    OUTPUT_FILE.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    for start in range(
+        0,
+        len(remaining),
+        BATCH_SIZE
+    ):
+
+        batch = remaining[
+            start:start + BATCH_SIZE
+        ]
+
+        print(
+            f"[{start + len(already_done) + 1}/"
+            f"{len(prepared)}] "
+            f"Classifying batch of "
+            f"{len(batch)}..."
+        )
+
+        try:
+
+            results = classify_batch(
+                client,
+                batch
             )
 
-            results = classify_batch(client, batch)
-            result_map = {r.get("item"): r for r in results if isinstance(r, dict) and "item" in r}
+            with open(
+                OUTPUT_FILE,
+                "a",
+                encoding="utf-8"
+            ) as f:
 
-            for idx, source in enumerate(batch):
-                result = result_map.get(idx)
-                if result:
-                    intent = result.get("intent", "unclear")
-                    if intent not in INTENTS:
-                        intent = "unclear"
-                    confidence = float(result.get("confidence", 0.9))
-                    reason = result.get("reason", "Context-aware reclassification.")
-                else:
-                    intent = "unclear"
-                    confidence = 0.0
-                    reason = "Batch parsing fallback."
+                for result in results:
 
-                output = {
-                    "conversation_id": source["conversation_id"],
-                    "tweet_id": source["tweet_id"],
-                    "text": source["text"],
-                    "previous_intent": source["intent"],
-                    "intent": intent,
-                    "confidence": confidence,
-                    "reason": reason,
-                }
-                f.write(json.dumps(output, ensure_ascii=False) + "\n")
+                    idx = result["item"]
+                    source = batch[idx]
 
-            f.flush()
-            print("    -> Batch saved successfully.", flush=True)
-            time.sleep(3.0)
+                    output = {
+                        "conversation_id":
+                            source["conversation_id"],
+                        "tweet_id":
+                            source["tweet_id"],
+                        "text":
+                            source["text"],
+                        "previous_intent":
+                            source["intent"],
+                        "intent":
+                            result["intent"],
+                        "confidence":
+                            result["confidence"],
+                        "reason":
+                            result["reason"]
+                    }
 
-    print("=" * 70, flush=True)
-    print("CONTEXT RECLASSIFICATION COMPLETE", flush=True)
-    print("=" * 70, flush=True)
-    print(f"Output: {OUTPUT_FILE}", flush=True)
+                    f.write(
+                        json.dumps(
+                            output,
+                            ensure_ascii=False
+                        ) + "\n"
+                    )
+
+            print(
+                "    -> Batch saved successfully."
+            )
+
+        except Exception as e:
+
+            print(
+                f"    ERROR: {e}"
+            )
+
+    print("=" * 70)
+    print("CONTEXT RECLASSIFICATION COMPLETE")
+    print("=" * 70)
+
+    print(
+        f"Output: {OUTPUT_FILE}"
+    )
 
 
 if __name__ == "__main__":
