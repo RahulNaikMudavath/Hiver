@@ -1,8 +1,21 @@
 import json
 import os
+import sys
 import time
+import warnings
 from pathlib import Path
 from dotenv import load_dotenv
+
+# Reconfigure stdout/stderr for Unicode/emoji support on Windows
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except AttributeError:
+        pass
+
+# Suppress harmless SDK warnings
+warnings.filterwarnings("ignore")
 
 # Load environment variables from .env
 load_dotenv()
@@ -23,6 +36,7 @@ OUTPUT_FILE = (
     / "intent_discovery_classified.jsonl"
 )
 
+BATCH_SIZE = 10  # Group messages per API call to minimize request count and avoid rate limits
 
 INTENTS = {
     "delivery_status_delay": "Delivery is late, delayed, missed, or taking too long.",
@@ -42,23 +56,18 @@ INTENTS = {
     "unclear": "Not enough information to determine the intent."
 }
 
+SYSTEM_PROMPT = """You are an expert AI classifying Amazon customer-support messages into an intent taxonomy.
 
-SYSTEM_PROMPT = """
-You are classifying Amazon customer-support messages.
+Allowed Intents:
+{taxonomy_text}
 
-Your task is to assign EXACTLY ONE intent to each customer message.
-
-Use the taxonomy provided below.
-
-Important rules:
-1. Choose the most specific applicable intent.
-2. Do not infer facts that are not present in the message.
-3. If the message is casual/social and not a support request, use non_support_social.
-4. If it is clearly a support issue but none of the specific categories fit, use other_support.
-5. If there is genuinely insufficient information, use unclear.
-6. Return ONLY valid JSON.
+Guidelines:
+1. Assign EXACTLY ONE intent to each message based strictly on the text.
+2. If casual/social or praise with no support request, use non_support_social.
+3. If support issue but no specific category fits, use other_support.
+4. If truly insufficient context, use unclear.
+5. Return a valid JSON array of objects with keys: "tweet_id", "intent", "confidence", "reason".
 """
-
 
 taxonomy_text = "\n".join(
     f"- {name}: {description}"
@@ -66,142 +75,137 @@ taxonomy_text = "\n".join(
 )
 
 
-def classify_message_gemini(client, text: str) -> dict:
+def classify_batch_gemini(client, batch_items: list, max_retries: int = 5) -> list:
     from google.genai import types
 
-    user_prompt = f"""{SYSTEM_PROMPT}
+    batch_prompt_lines = ["Classify the following customer messages:"]
+    for item in batch_items:
+        clean_text = item["text"].replace("\n", " ").strip()
+        batch_prompt_lines.append(f"- [tweet_id: {item['tweet_id']}] \"{clean_text}\"")
 
-Taxonomy:
-{taxonomy_text}
-
-Customer message:
-"{text}"
-
-Return JSON in exactly this format:
-{{
-  "intent": "one_taxonomy_label",
-  "confidence": 0.0,
-  "reason": "short explanation"
-}}
-"""
-    response = client.models.generate_content(
-        model="gemini-3.6-flash",
-        contents=user_prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.0,
-        ),
+    prompt = (
+        SYSTEM_PROMPT.format(taxonomy_text=taxonomy_text)
+        + "\n\n"
+        + "\n".join(batch_prompt_lines)
+        + "\n\nReturn JSON array:"
+        + "\n[{\"tweet_id\": \"...\", \"intent\": \"...\", \"confidence\": 0.95, \"reason\": \"...\"}]"
     )
-    result = json.loads(response.text)
-    if result.get("intent") not in INTENTS:
-        result["intent"] = "unclear"
-    return result
 
+    for attempt in range(1, max_retries + 1):
+        try:
+            response = client.models.generate_content(
+                model="gemini-3.5-flash-lite",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0.0,
+                ),
+            )
+            data = json.loads(response.text)
+            if isinstance(data, dict) and "classifications" in data:
+                data = data["classifications"]
+            if not isinstance(data, list):
+                data = [data]
+            return data
 
-def classify_message_openai(client, text: str) -> dict:
-    user_prompt = f"""
-Taxonomy:
+        except Exception as e:
+            err_str = str(e)
+            if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
+                wait_sec = 10 * attempt
+                print(f"    [Rate limit 429] Backing off for {wait_sec}s (attempt {attempt}/{max_retries})...", flush=True)
+                time.sleep(wait_sec)
+            else:
+                print(f"    [API Error] {e} (attempt {attempt}/{max_retries})", flush=True)
+                time.sleep(2)
 
-{taxonomy_text}
-
-Customer message:
-
-{text}
-
-Return JSON in exactly this format:
-
-{{
-  "intent": "one_taxonomy_label",
-  "confidence": 0.0,
-  "reason": "short explanation"
-}}
-"""
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        temperature=0,
-        response_format={"type": "json_object"},
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_prompt},
-        ],
-    )
-    result = json.loads(response.choices[0].message.content)
-    if result.get("intent") not in INTENTS:
-        result["intent"] = "unclear"
-    return result
+    return []
 
 
 def main():
     gemini_key = os.getenv("GEMINI_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
 
-    provider = None
-    client = None
+    if not gemini_key and not openai_key:
+        raise RuntimeError("Neither GEMINI_API_KEY nor OPENAI_API_KEY is configured in .env.")
 
-    if gemini_key:
-        from google import genai
-        client = genai.Client(api_key=gemini_key)
-        provider = "gemini"
-        print("Using Gemini API (gemini-3.6-flash) for intent classification.")
-    elif openai_key:
-        from openai import OpenAI
-        client = OpenAI(api_key=openai_key)
-        provider = "openai"
-        print("Using OpenAI API (gpt-4o-mini) for intent classification.")
-    else:
-        raise RuntimeError(
-            "Neither GEMINI_API_KEY nor OPENAI_API_KEY is set in .env. Please configure at least one."
-        )
+    from google import genai
+    client = genai.Client(api_key=gemini_key)
+    print("Using Gemini API (gemini-3.5-flash-lite) with batching for high throughput.", flush=True)
 
     if not INPUT_FILE.exists():
-        raise FileNotFoundError(f"Input file not found at {INPUT_FILE}. Run build_intent_sample.py first.")
+        raise FileNotFoundError(f"Input file not found at {INPUT_FILE}.")
 
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         messages = [json.loads(line) for line in f]
 
-    print(f"Messages loaded: {len(messages):,}")
+    print(f"Total sample messages loaded: {len(messages):,}", flush=True)
 
-    results = []
-
-    for i, item in enumerate(messages, start=1):
-        print(f"[{i}/{len(messages)}] Classifying...")
-
-        try:
-            if provider == "gemini":
-                classification = classify_message_gemini(client, item["text"])
-            else:
-                classification = classify_message_openai(client, item["text"])
-
-            result = {
-                **item,
-                **classification,
-            }
-            results.append(result)
-            print(f"    -> {classification['intent']} ({classification.get('confidence', 1.0)})")
-
-        except Exception as e:
-            print(f"    ERROR: {e}")
-            result = {
-                **item,
-                "intent": "unclear",
-                "confidence": 0.0,
-                "reason": f"Classification error: {e}",
-            }
-            results.append(result)
-
-        # Small pause between calls
-        time.sleep(0.05)
-
+    # Resume capability: keep track of already classified tweet_ids
+    processed_ids = set()
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        for item in results:
-            f.write(json.dumps(item, ensure_ascii=False) + "\n")
+    if OUTPUT_FILE.exists():
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    try:
+                        rec = json.loads(line)
+                        if rec.get("intent") != "unclear" or "Classification error:" not in rec.get("reason", ""):
+                            processed_ids.add(str(rec.get("tweet_id")))
+                    except Exception:
+                        pass
 
-    print("=" * 70)
-    print("CLASSIFICATION COMPLETE")
-    print("=" * 70)
-    print(f"Messages: {len(results):,}")
-    print(f"Output:   {OUTPUT_FILE}")
+    remaining_messages = [m for m in messages if str(m.get("tweet_id")) not in processed_ids]
+    print(f"Already classified: {len(processed_ids):,} | Remaining to classify: {len(remaining_messages):,}", flush=True)
+
+    if not remaining_messages:
+        print("All messages have already been successfully classified!", flush=True)
+        return
+
+    # Process in batches
+    with open(OUTPUT_FILE, "a", encoding="utf-8") as out:
+        for batch_idx in range(0, len(remaining_messages), BATCH_SIZE):
+            batch = remaining_messages[batch_idx : batch_idx + BATCH_SIZE]
+            current_num = len(processed_ids) + len(batch)
+            print(f"[{current_num}/{len(messages)}] Classifying batch of {len(batch)} messages...", flush=True)
+
+            predictions = classify_batch_gemini(client, batch)
+            pred_map = {str(p.get("tweet_id")): p for p in predictions if isinstance(p, dict)}
+
+            for item in batch:
+                t_id = str(item.get("tweet_id"))
+                pred = pred_map.get(t_id)
+
+                if pred:
+                    intent = pred.get("intent", "unclear")
+                    if intent not in INTENTS:
+                        intent = "unclear"
+                    confidence = float(pred.get("confidence", 0.9))
+                    reason = pred.get("reason", "Classified by Gemini model.")
+                else:
+                    intent = "unclear"
+                    confidence = 0.0
+                    reason = "Batch parsing fallback."
+
+                record = {
+                    **item,
+                    "intent": intent,
+                    "confidence": confidence,
+                    "reason": reason,
+                }
+                out.write(json.dumps(record, ensure_ascii=False) + "\n")
+                processed_ids.add(t_id)
+
+            out.flush()
+            print(f"    -> Successfully classified and saved batch ({len(batch)} records).", flush=True)
+
+            # Small pause between batches
+            time.sleep(3.0)
+
+    print("=" * 70, flush=True)
+    print("CLASSIFICATION COMPLETE", flush=True)
+    print("=" * 70, flush=True)
+    print(f"Total records saved: {len(processed_ids):,}")
+    print(f"Output path: {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
