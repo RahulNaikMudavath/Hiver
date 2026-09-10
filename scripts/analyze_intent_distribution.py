@@ -8,7 +8,7 @@ INPUT_FILE = (
     PROJECT_ROOT
     / "data"
     / "processed"
-    / "intent_discovery_classified.jsonl"
+    / "intent_discovery_classified_clean.jsonl"
 )
 
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
