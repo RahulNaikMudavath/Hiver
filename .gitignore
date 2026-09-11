@@ -21,6 +21,8 @@ data/processed/*
 !data/processed/.gitkeep
 data/golden/*
 !data/golden/.gitkeep
+!data/golden/*.jsonl
+!data/golden/*.md
 models/
 *.faiss
 *.pkl
