@@ -23,6 +23,11 @@ data/golden/*
 !data/golden/.gitkeep
 !data/golden/*.jsonl
 !data/golden/*.md
+!data/golden/*.json
+!data/golden/*.txt
+data/knowledge/*.jsonl
+!data/knowledge/.gitkeep
+!data/knowledge/*.md
 models/
 *.faiss
 *.pkl
