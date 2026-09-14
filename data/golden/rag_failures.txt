@@ -1,0 +1,50 @@
+RAG FAILURE ANALYSIS
+================================================================================
+
+Total evaluated : 200
+Correct         : 126
+Failures        : 74
+Accuracy        : 63.00%
+
+TOP CONFUSION PAIRS
+--------------------------------------------------------------------------------
+  9  delivery_carrier_issue -> delivery_status_delay
+  5  delivery_status_delay -> delivery_carrier_issue
+  5  product_service_information -> technical_or_system_issue
+  3  refund_issue -> customer_support_experience
+  3  delivery_carrier_issue -> customer_support_experience
+  3  delivery_status_delay -> customer_support_experience
+  2  product_service_information -> prime_or_subscription
+  2  delivery_status_delay -> order_cancellation
+  2  customer_support_experience -> refund_issue
+  2  return_issue -> product_issue
+  2  product_issue -> customer_support_experience
+  2  product_service_information -> product_issue
+  1  seller_support_issue -> product_service_information
+  1  technical_or_system_issue -> payment_or_cashback
+  1  prime_or_subscription -> technical_or_system_issue
+  1  non_support_social -> other_support
+  1  delivery_not_received -> product_issue
+  1  delivery_carrier_issue -> return_issue
+  1  seller_support_issue -> return_issue
+  1  other_support -> customer_support_experience
+
+FAILURE RATE BY INTENT
+--------------------------------------------------------------------------------
+delivery_status_delay            11/35 (31.43%)
+product_service_information      12/22 (54.55%)
+delivery_carrier_issue           14/20 (70.00%)
+customer_support_experience      4/20 (20.00%)
+product_issue                    3/14 (21.43%)
+delivery_not_received            3/13 (23.08%)
+refund_issue                     4/10 (40.00%)
+pricing_or_promotion             3/10 (30.00%)
+payment_or_cashback              2/10 (20.00%)
+prime_or_subscription            2/8 (25.00%)
+return_issue                     2/8 (25.00%)
+account_access_security          2/8 (25.00%)
+order_cancellation               2/6 (33.33%)
+seller_support_issue             2/5 (40.00%)
+technical_or_system_issue        2/5 (40.00%)
+other_support                    4/4 (100.00%)
+non_support_social               2/2 (100.00%)

@@ -1,0 +1,215 @@
+{
+  "total_evaluated": 200,
+  "correct": 126,
+  "failures": 74,
+  "accuracy": 0.63,
+  "top_confusion_pairs": [
+    {
+      "gold": "delivery_carrier_issue",
+      "predicted": "delivery_status_delay",
+      "count": 9
+    },
+    {
+      "gold": "delivery_status_delay",
+      "predicted": "delivery_carrier_issue",
+      "count": 5
+    },
+    {
+      "gold": "product_service_information",
+      "predicted": "technical_or_system_issue",
+      "count": 5
+    },
+    {
+      "gold": "refund_issue",
+      "predicted": "customer_support_experience",
+      "count": 3
+    },
+    {
+      "gold": "delivery_carrier_issue",
+      "predicted": "customer_support_experience",
+      "count": 3
+    },
+    {
+      "gold": "delivery_status_delay",
+      "predicted": "customer_support_experience",
+      "count": 3
+    },
+    {
+      "gold": "product_service_information",
+      "predicted": "prime_or_subscription",
+      "count": 2
+    },
+    {
+      "gold": "delivery_status_delay",
+      "predicted": "order_cancellation",
+      "count": 2
+    },
+    {
+      "gold": "customer_support_experience",
+      "predicted": "refund_issue",
+      "count": 2
+    },
+    {
+      "gold": "return_issue",
+      "predicted": "product_issue",
+      "count": 2
+    },
+    {
+      "gold": "product_issue",
+      "predicted": "customer_support_experience",
+      "count": 2
+    },
+    {
+      "gold": "product_service_information",
+      "predicted": "product_issue",
+      "count": 2
+    },
+    {
+      "gold": "seller_support_issue",
+      "predicted": "product_service_information",
+      "count": 1
+    },
+    {
+      "gold": "technical_or_system_issue",
+      "predicted": "payment_or_cashback",
+      "count": 1
+    },
+    {
+      "gold": "prime_or_subscription",
+      "predicted": "technical_or_system_issue",
+      "count": 1
+    },
+    {
+      "gold": "non_support_social",
+      "predicted": "other_support",
+      "count": 1
+    },
+    {
+      "gold": "delivery_not_received",
+      "predicted": "product_issue",
+      "count": 1
+    },
+    {
+      "gold": "delivery_carrier_issue",
+      "predicted": "return_issue",
+      "count": 1
+    },
+    {
+      "gold": "seller_support_issue",
+      "predicted": "return_issue",
+      "count": 1
+    },
+    {
+      "gold": "other_support",
+      "predicted": "customer_support_experience",
+      "count": 1
+    }
+  ],
+  "failure_rate_by_intent": [
+    {
+      "intent": "delivery_status_delay",
+      "total": 35,
+      "failures": 11,
+      "failure_rate": 0.3142857142857143
+    },
+    {
+      "intent": "product_service_information",
+      "total": 22,
+      "failures": 12,
+      "failure_rate": 0.5454545454545454
+    },
+    {
+      "intent": "delivery_carrier_issue",
+      "total": 20,
+      "failures": 14,
+      "failure_rate": 0.7
+    },
+    {
+      "intent": "customer_support_experience",
+      "total": 20,
+      "failures": 4,
+      "failure_rate": 0.2
+    },
+    {
+      "intent": "product_issue",
+      "total": 14,
+      "failures": 3,
+      "failure_rate": 0.21428571428571427
+    },
+    {
+      "intent": "delivery_not_received",
+      "total": 13,
+      "failures": 3,
+      "failure_rate": 0.23076923076923078
+    },
+    {
+      "intent": "refund_issue",
+      "total": 10,
+      "failures": 4,
+      "failure_rate": 0.4
+    },
+    {
+      "intent": "pricing_or_promotion",
+      "total": 10,
+      "failures": 3,
+      "failure_rate": 0.3
+    },
+    {
+      "intent": "payment_or_cashback",
+      "total": 10,
+      "failures": 2,
+      "failure_rate": 0.2
+    },
+    {
+      "intent": "prime_or_subscription",
+      "total": 8,
+      "failures": 2,
+      "failure_rate": 0.25
+    },
+    {
+      "intent": "return_issue",
+      "total": 8,
+      "failures": 2,
+      "failure_rate": 0.25
+    },
+    {
+      "intent": "account_access_security",
+      "total": 8,
+      "failures": 2,
+      "failure_rate": 0.25
+    },
+    {
+      "intent": "order_cancellation",
+      "total": 6,
+      "failures": 2,
+      "failure_rate": 0.3333333333333333
+    },
+    {
+      "intent": "seller_support_issue",
+      "total": 5,
+      "failures": 2,
+      "failure_rate": 0.4
+    },
+    {
+      "intent": "technical_or_system_issue",
+      "total": 5,
+      "failures": 2,
+      "failure_rate": 0.4
+    },
+    {
+      "intent": "other_support",
+      "total": 4,
+      "failures": 4,
+      "failure_rate": 1.0
+    },
+    {
+      "intent": "non_support_social",
+      "total": 2,
+      "failures": 2,
+      "failure_rate": 1.0
+    }
+  ],
+  "average_top_retrieval_score": 0.5582,
+  "average_score_correct": 0.5622,
+  "average_score_wrong": 0.5512
+}
