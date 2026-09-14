@@ -1,0 +1,1800 @@
+{
+  "total_examples": 200,
+  "correct": 45,
+  "failures": [
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "seller_support_issue",
+      "predicted_intent": "product_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "product_service_information",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "delivery_status_delay",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "refund_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "payment_or_cashback",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "refund_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "seller_support_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "payment_or_cashback",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "seller_support_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "return_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "return_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "order_cancellation",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "order_cancellation",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "non_support_social",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "refund_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "payment_or_cashback",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "refund_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "technical_or_system_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "technical_or_system_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "delivery_carrier_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "refund_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "order_cancellation",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "return_issue",
+      "predicted_intent": "product_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "payment_or_cashback",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "delivery_carrier_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "refund_issue",
+      "predicted_intent": "product_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "return_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "return_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "order_cancellation",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "account_access_security",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "account_access_security",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "seller_support_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "account_access_security",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "refund_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "account_access_security",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "account_access_security",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "payment_or_cashback",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "seller_support_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "order_cancellation",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "account_access_security",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "refund_issue",
+      "predicted_intent": "other_support",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "delivery_carrier_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_service_information",
+      "predicted_intent": "seller_support_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "customer_support_experience",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "payment_or_cashback",
+      "predicted_intent": "technical_or_system_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "product_issue",
+      "predicted_intent": "customer_support_experience",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "delivery_status_delay",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "customer_support_experience",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "other_support",
+      "predicted_intent": "technical_or_system_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "return_issue",
+      "predicted_intent": "product_issue",
+      "annotation_notes": null
+    },
+    {
+      "candidate_id": null,
+      "conversation_id": null,
+      "target_tweet_id": null,
+      "target_text": null,
+      "conversation_context": null,
+      "gold_intent": "payment_or_cashback",
+      "predicted_intent": "product_service_information",
+      "annotation_notes": null
+    }
+  ],
+  "predicted_distribution": {
+    "delivery_carrier_issue": 10,
+    "product_issue": 8,
+    "product_service_information": 6,
+    "customer_support_experience": 8,
+    "technical_or_system_issue": 5,
+    "refund_issue": 2,
+    "delivery_status_delay": 7,
+    "non_support_social": 1,
+    "other_support": 140,
+    "payment_or_cashback": 5,
+    "order_cancellation": 1,
+    "return_issue": 2,
+    "account_access_security": 2,
+    "seller_support_issue": 1,
+    "delivery_not_received": 2
+  },
+  "top_confusions": [
+    {
+      "gold_intent": "delivery_status_delay",
+      "predicted_intent": "other_support",
+      "count": 29
+    },
+    {
+      "gold_intent": "product_service_information",
+      "predicted_intent": "other_support",
+      "count": 17
+    },
+    {
+      "gold_intent": "customer_support_experience",
+      "predicted_intent": "other_support",
+      "count": 15
+    },
+    {
+      "gold_intent": "delivery_carrier_issue",
+      "predicted_intent": "other_support",
+      "count": 12
+    },
+    {
+      "gold_intent": "pricing_or_promotion",
+      "predicted_intent": "other_support",
+      "count": 9
+    },
+    {
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "other_support",
+      "count": 8
+    },
+    {
+      "gold_intent": "product_issue",
+      "predicted_intent": "other_support",
+      "count": 8
+    },
+    {
+      "gold_intent": "refund_issue",
+      "predicted_intent": "other_support",
+      "count": 7
+    },
+    {
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "other_support",
+      "count": 6
+    },
+    {
+      "gold_intent": "account_access_security",
+      "predicted_intent": "other_support",
+      "count": 6
+    },
+    {
+      "gold_intent": "order_cancellation",
+      "predicted_intent": "other_support",
+      "count": 5
+    },
+    {
+      "gold_intent": "payment_or_cashback",
+      "predicted_intent": "other_support",
+      "count": 4
+    },
+    {
+      "gold_intent": "seller_support_issue",
+      "predicted_intent": "other_support",
+      "count": 4
+    },
+    {
+      "gold_intent": "return_issue",
+      "predicted_intent": "other_support",
+      "count": 4
+    },
+    {
+      "gold_intent": "technical_or_system_issue",
+      "predicted_intent": "other_support",
+      "count": 2
+    },
+    {
+      "gold_intent": "delivery_not_received",
+      "predicted_intent": "delivery_carrier_issue",
+      "count": 2
+    },
+    {
+      "gold_intent": "return_issue",
+      "predicted_intent": "product_issue",
+      "count": 2
+    },
+    {
+      "gold_intent": "product_issue",
+      "predicted_intent": "customer_support_experience",
+      "count": 2
+    },
+    {
+      "gold_intent": "seller_support_issue",
+      "predicted_intent": "product_issue",
+      "count": 1
+    },
+    {
+      "gold_intent": "prime_or_subscription",
+      "predicted_intent": "product_service_information",
+      "count": 1
+    }
+  ],
+  "other_support_overprediction": {
+    "count": 137,
+    "by_gold_intent": {
+      "product_service_information": 17,
+      "refund_issue": 7,
+      "customer_support_experience": 15,
+      "pricing_or_promotion": 9,
+      "delivery_not_received": 8,
+      "delivery_status_delay": 29,
+      "delivery_carrier_issue": 12,
+      "payment_or_cashback": 4,
+      "product_issue": 8,
+      "seller_support_issue": 4,
+      "return_issue": 4,
+      "prime_or_subscription": 6,
+      "order_cancellation": 5,
+      "non_support_social": 1,
+      "technical_or_system_issue": 2,
+      "account_access_security": 6
+    }
+  },
+  "failure_rate_by_intent": [
+    {
+      "intent": "seller_support_issue",
+      "total": 5,
+      "failed": 5,
+      "failure_rate": 1.0
+    },
+    {
+      "intent": "prime_or_subscription",
+      "total": 8,
+      "failed": 8,
+      "failure_rate": 1.0
+    },
+    {
+      "intent": "pricing_or_promotion",
+      "total": 10,
+      "failed": 10,
+      "failure_rate": 1.0
+    },
+    {
+      "intent": "delivery_status_delay",
+      "total": 35,
+      "failed": 30,
+      "failure_rate": 0.8571428571428571
+    },
+    {
+      "intent": "delivery_not_received",
+      "total": 13,
+      "failed": 11,
+      "failure_rate": 0.8461538461538461
+    },
+    {
+      "intent": "order_cancellation",
+      "total": 6,
+      "failed": 5,
+      "failure_rate": 0.8333333333333334
+    },
+    {
+      "intent": "product_service_information",
+      "total": 22,
+      "failed": 18,
+      "failure_rate": 0.8181818181818182
+    },
+    {
+      "intent": "refund_issue",
+      "total": 10,
+      "failed": 8,
+      "failure_rate": 0.8
+    },
+    {
+      "intent": "customer_support_experience",
+      "total": 20,
+      "failed": 15,
+      "failure_rate": 0.75
+    },
+    {
+      "intent": "return_issue",
+      "total": 8,
+      "failed": 6,
+      "failure_rate": 0.75
+    },
+    {
+      "intent": "account_access_security",
+      "total": 8,
+      "failed": 6,
+      "failure_rate": 0.75
+    },
+    {
+      "intent": "product_issue",
+      "total": 14,
+      "failed": 10,
+      "failure_rate": 0.7142857142857143
+    },
+    {
+      "intent": "delivery_carrier_issue",
+      "total": 20,
+      "failed": 13,
+      "failure_rate": 0.65
+    },
+    {
+      "intent": "payment_or_cashback",
+      "total": 10,
+      "failed": 6,
+      "failure_rate": 0.6
+    },
+    {
+      "intent": "non_support_social",
+      "total": 2,
+      "failed": 1,
+      "failure_rate": 0.5
+    },
+    {
+      "intent": "technical_or_system_issue",
+      "total": 5,
+      "failed": 2,
+      "failure_rate": 0.4
+    },
+    {
+      "intent": "other_support",
+      "total": 4,
+      "failed": 1,
+      "failure_rate": 0.25
+    }
+  ]
+}

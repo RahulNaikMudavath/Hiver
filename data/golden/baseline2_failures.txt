@@ -1,0 +1,1243 @@
+BASELINE 2 — MISCLASSIFIED EXAMPLES
+================================================================================
+
+FAILURE #1
+--------------------------------------------------------------------------------
+Gold      : seller_support_issue
+Predicted : product_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #2
+--------------------------------------------------------------------------------
+Gold      : prime_or_subscription
+Predicted : product_service_information
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #3
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : delivery_status_delay
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #4
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #5
+--------------------------------------------------------------------------------
+Gold      : refund_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #6
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #7
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #8
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #9
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #10
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #11
+--------------------------------------------------------------------------------
+Gold      : payment_or_cashback
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #12
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #13
+--------------------------------------------------------------------------------
+Gold      : refund_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #14
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #15
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #16
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #17
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #18
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #19
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #20
+--------------------------------------------------------------------------------
+Gold      : seller_support_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #21
+--------------------------------------------------------------------------------
+Gold      : payment_or_cashback
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #22
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #23
+--------------------------------------------------------------------------------
+Gold      : seller_support_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #24
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #25
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #26
+--------------------------------------------------------------------------------
+Gold      : return_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #27
+--------------------------------------------------------------------------------
+Gold      : prime_or_subscription
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #28
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #29
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #30
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #31
+--------------------------------------------------------------------------------
+Gold      : return_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #32
+--------------------------------------------------------------------------------
+Gold      : order_cancellation
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #33
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #34
+--------------------------------------------------------------------------------
+Gold      : order_cancellation
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #35
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #36
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #37
+--------------------------------------------------------------------------------
+Gold      : non_support_social
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #38
+--------------------------------------------------------------------------------
+Gold      : refund_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #39
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #40
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #41
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #42
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #43
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #44
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #45
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #46
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #47
+--------------------------------------------------------------------------------
+Gold      : payment_or_cashback
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #48
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #49
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #50
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #51
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #52
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #53
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #54
+--------------------------------------------------------------------------------
+Gold      : refund_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #55
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #56
+--------------------------------------------------------------------------------
+Gold      : technical_or_system_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #57
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #58
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #59
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #60
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #61
+--------------------------------------------------------------------------------
+Gold      : technical_or_system_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #62
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #63
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #64
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #65
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #66
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #67
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : delivery_carrier_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #68
+--------------------------------------------------------------------------------
+Gold      : refund_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #69
+--------------------------------------------------------------------------------
+Gold      : order_cancellation
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #70
+--------------------------------------------------------------------------------
+Gold      : return_issue
+Predicted : product_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #71
+--------------------------------------------------------------------------------
+Gold      : prime_or_subscription
+Predicted : payment_or_cashback
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #72
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : delivery_carrier_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #73
+--------------------------------------------------------------------------------
+Gold      : refund_issue
+Predicted : product_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #74
+--------------------------------------------------------------------------------
+Gold      : return_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #75
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #76
+--------------------------------------------------------------------------------
+Gold      : return_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #77
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #78
+--------------------------------------------------------------------------------
+Gold      : order_cancellation
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #79
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #80
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #81
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #82
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #83
+--------------------------------------------------------------------------------
+Gold      : prime_or_subscription
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #84
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #85
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #86
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #87
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #88
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #89
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #90
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #91
+--------------------------------------------------------------------------------
+Gold      : account_access_security
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #92
+--------------------------------------------------------------------------------
+Gold      : account_access_security
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #93
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #94
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #95
+--------------------------------------------------------------------------------
+Gold      : seller_support_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #96
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #97
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #98
+--------------------------------------------------------------------------------
+Gold      : account_access_security
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #99
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #100
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #101
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #102
+--------------------------------------------------------------------------------
+Gold      : refund_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #103
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #104
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #105
+--------------------------------------------------------------------------------
+Gold      : prime_or_subscription
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #106
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #107
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #108
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #109
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #110
+--------------------------------------------------------------------------------
+Gold      : account_access_security
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #111
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #112
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #113
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #114
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #115
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #116
+--------------------------------------------------------------------------------
+Gold      : account_access_security
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #117
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #118
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #119
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #120
+--------------------------------------------------------------------------------
+Gold      : prime_or_subscription
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #121
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #122
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #123
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #124
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #125
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #126
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #127
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #128
+--------------------------------------------------------------------------------
+Gold      : payment_or_cashback
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #129
+--------------------------------------------------------------------------------
+Gold      : prime_or_subscription
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #130
+--------------------------------------------------------------------------------
+Gold      : seller_support_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #131
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #132
+--------------------------------------------------------------------------------
+Gold      : order_cancellation
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #133
+--------------------------------------------------------------------------------
+Gold      : customer_support_experience
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #134
+--------------------------------------------------------------------------------
+Gold      : prime_or_subscription
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #135
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #136
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #137
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #138
+--------------------------------------------------------------------------------
+Gold      : delivery_status_delay
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #139
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #140
+--------------------------------------------------------------------------------
+Gold      : account_access_security
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #141
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #142
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #143
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #144
+--------------------------------------------------------------------------------
+Gold      : delivery_carrier_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #145
+--------------------------------------------------------------------------------
+Gold      : refund_issue
+Predicted : other_support
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #146
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : delivery_carrier_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #147
+--------------------------------------------------------------------------------
+Gold      : product_service_information
+Predicted : seller_support_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #148
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : customer_support_experience
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #149
+--------------------------------------------------------------------------------
+Gold      : payment_or_cashback
+Predicted : technical_or_system_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #150
+--------------------------------------------------------------------------------
+Gold      : product_issue
+Predicted : customer_support_experience
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #151
+--------------------------------------------------------------------------------
+Gold      : pricing_or_promotion
+Predicted : delivery_status_delay
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #152
+--------------------------------------------------------------------------------
+Gold      : delivery_not_received
+Predicted : customer_support_experience
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #153
+--------------------------------------------------------------------------------
+Gold      : other_support
+Predicted : technical_or_system_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #154
+--------------------------------------------------------------------------------
+Gold      : return_issue
+Predicted : product_issue
+Tweet ID  : None
+Message   : None
+Context   : None
+
+FAILURE #155
+--------------------------------------------------------------------------------
+Gold      : payment_or_cashback
+Predicted : product_service_information
+Tweet ID  : None
+Message   : None
+Context   : None
+
