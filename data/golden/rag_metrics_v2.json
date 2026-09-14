@@ -1,0 +1,12 @@
+{
+  "total_examples": 200,
+  "invalid_or_error_cases": 0,
+  "accuracy": 0.645,
+  "macro_precision": 0.629079,
+  "macro_recall": 0.639548,
+  "macro_f1": 0.614301,
+  "weighted_precision": 0.686572,
+  "weighted_recall": 0.645,
+  "weighted_f1": 0.650641,
+  "output_file": "data\\golden\\rag_predictions_v2.jsonl"
+}
