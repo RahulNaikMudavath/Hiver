@@ -37,6 +37,8 @@ models/
 # Experiments & Logs
 experiments/results/*
 !experiments/results/.gitkeep
+!experiments/results/*.json
+!experiments/results/*.md
 *.log
 
 # Jupyter

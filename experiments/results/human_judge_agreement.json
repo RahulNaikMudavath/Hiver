@@ -1,0 +1,587 @@
+{
+  "metrics": {
+    "sample_size": 30,
+    "mean_scores": {
+      "correctness": {
+        "human_mean": 3.7,
+        "judge_mean": 3.933
+      },
+      "empathy": {
+        "human_mean": 4.367,
+        "judge_mean": 4.7
+      },
+      "actionability": {
+        "human_mean": 3.867,
+        "judge_mean": 4.533
+      },
+      "overall": {
+        "human_mean": 3.977,
+        "judge_mean": 4.39
+      }
+    },
+    "agreement": {
+      "correctness": {
+        "mae": 1.1,
+        "pearson_r": -0.0448427654462745,
+        "cohen_kappa": -0.047040971168436974
+      },
+      "empathy": {
+        "mae": 0.3333333333333333,
+        "pearson_r": 0.4981167541368987,
+        "cohen_kappa": 0.3975903614457832
+      },
+      "actionability": {
+        "mae": 0.7333333333333333,
+        "pearson_r": 0.5916751650850943,
+        "cohen_kappa": 0.05063291139240522
+      },
+      "overall": {
+        "mae": 0.6336666666666666,
+        "pearson_r": 0.34244631007171605,
+        "cohen_kappa": 0.25249169435215957
+      }
+    }
+  },
+  "evaluations": [
+    {
+      "candidate_id": 1,
+      "query": "@AmazonHelp Ups. Requested upgraded shipping but told  only option was to either refuse shipment or call ups to have them hold and send back",
+      "reply": "I'm sorry for the conflicting information you received about upgrading your shipping. Since this order is already with the carrier, please reach out to us via secure chat or phone so we can investigate this further with our support team.",
+      "human_scores": {
+        "correctness": 3.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 3.67
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 2,
+      "query": "@AmazonHelp [USERNAME] Hello Amazon, looks like ur priorities r clear. U wanna continue filling up your pockets at ur innocent customers cost.\n#ScamAtAmazon\n#Day17",
+      "reply": "We apologize for the frustration regarding your product review. Reviews must focus solely on product performance and adhere to our community guidelines to be published.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 3,
+      "query": "Do we have an affiliate program for promoting 'Amazon Prime' ?\n\n[USERNAME] @AmazonHelp",
+      "reply": "Yes, we do have an affiliate program! You can learn more about the Amazon Associates program and how to promote programs like Amazon Prime by checking our program details online.",
+      "human_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 4,
+      "query": "@AmazonHelp Yes definitely no response, this is the 3rd failed escalated manager response / callback since the beginning of the week",
+      "reply": "I'm truly sorry for the repeated delays and frustration with these callbacks. I have escalated this directly to our management team to ensure you receive an update as quickly as possible.",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 3.0,
+        "overall": 4.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 4.0,
+        "overall": 4.33
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 5,
+      "query": "@AmazonHelp I have mentioned the exact problem I am facing along with the order number, I expect a proactive response with an appropriate solution at the earliest this is certainly killing a lot of time @AmazonHelp",
+      "reply": "I understand your frustration with checkout failures and want to help you complete your purchase. Could you please share the exact error message you see when trying to pay?",
+      "human_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 4.0,
+        "overall": 4.33
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 6,
+      "query": "@AmazonHelp Finally I got my money back after 11 days struggling with customer support team.",
+      "reply": "We apologize for the ongoing delay and the frustration you've experienced with our support team. We are looking into your details and will get back to you as soon as possible.",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 3.0,
+        "overall": 4.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 7,
+      "query": "@AmazonHelp It was purchased from Amazon UK.",
+      "reply": "Thanks for confirming! Echo features and language support vary by region and marketplace, and currently, Alexa's music recognition and language features are optimized primarily for the local language settings of the region where the device was purchased and is registered. We appreciate your feedback regarding Kannada language support and have shared it with our development team.",
+      "human_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 8,
+      "query": "@AmazonHelp It won't let me submit the form unless I enter my phone number",
+      "reply": "I'm sorry for the trouble with the form. Please try entering placeholder digits such as zeros or ones in the phone number field so you can submit your message, and we will be happy to assist you by email.",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 5.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 9,
+      "query": "[USERNAME] And no, he didn't try knocking first. He said it was because he was in a hurry.",
+      "reply": "I am so sorry for this alarming experience with the delivery driver. Since you offered to share the details via direct message, please feel free to send us a DM with your order and tracking number so our specialist team can investigate this immediately.",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 5.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 10,
+      "query": "@AmazonHelp 2days in a row, rude and useless customer service!",
+      "reply": "I am so sorry to hear that you've had a frustrating experience with our customer service team over the last couple of days. We'd love to help look into this further for you. Please reach out to us via direct message with the details of your order and your experience so we can review this for you.",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 5.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 11,
+      "query": "@AmazonHelp Tried. The rep couldn't assist much. Only shallow assurances.",
+      "reply": "I'm sorry to hear about your experience with the delivery agent and previous support. Please rest assured that our delivery agent will contact you on the number you provided if they need any assistance in locating your workplace address.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 3.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 12,
+      "query": "@AmazonHelp Hi. Just called your customer service and was the representative was unable to understand the query and hung up.",
+      "reply": "We're sorry for the frustration and delay with your Pass My Parcel collection location. Our team is looking into this for you, and someone will be in touch as soon as possible.",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 3.0,
+        "overall": 4.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 4.0,
+        "overall": 4.33
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 13,
+      "query": "No halloween costume for me after another no show by [USERNAME]. Prime? Prime time wasters 😑",
+      "reply": "I'm so sorry that your costume didn't arrive on time and that you had to cancel the order. If you need any help with confirming the cancellation or anything else, please let us know.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 4.0,
+        "overall": 4.33
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 14,
+      "query": "[USERNAME] my echo keeps telling me that I need to link my premium spotify account to play music from there but I have already done that. Can you help?",
+      "reply": "Thanks for keeping us updated! Since you're still experiencing trouble getting the account linked for voice control, please reach out to us via chat or phone so we can look into your device settings further.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 3.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 5.0,
+        "overall": 4.33
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 15,
+      "query": ".[USERNAME] prime is getting sloppy. If you say two day delivery, don’t hand off the package to [USERNAME]. It won’t get to its destination in two days, if ever. #ffs",
+      "reply": "I'm sorry to hear that your delivery didn't arrive by today's date as expected and that you're facing this delay. We'll keep an eye on the new delivery dates to ensure your package gets to you as soon as possible.",
+      "human_scores": {
+        "correctness": 3.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 4.0,
+        "overall": 4.33
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 16,
+      "query": "[USERNAME] \"don't worry papa, I have many friends in Prime video to spend time with\". My 6 year old says when she broke her hand and needed 1 month rest at home. Thanks guys for building confidence among viewers , even in the little one's. https://t.co/xJRYnVSz5w",
+      "reply": "Thank you so much for sharing this heartwarming story with us! We are wishing your little one a very speedy recovery, and we're so glad Prime Video can help keep her company during her rest. ^SG",
+      "human_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.67
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 17,
+      "query": "@AmazonHelp Why was I not told this before I ordered, though? I would've ordered the standard edition and had it on time.",
+      "reply": "I apologize for the frustration regarding your order and edition availability. We strive to provide clear information on product pages before checkout, and I understand how disappointing this has been. Please share your order details with us via direct message so we can look into your options.",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 5.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 19,
+      "query": "@AmazonHelp [USERNAME] \nNot getting response over my concern,just topic diverting mails\nWith nonsense logic and rules\n#WorstExcusesForCheating",
+      "reply": "We understand your frustration regarding your Amazon Pay balance top-up. Please check your registered email for the latest updates from our support team regarding your refund status.",
+      "human_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 20,
+      "query": "[USERNAME] @AmazonHelp [USERNAME]  can someone look in order # [ORDER_ID]. Pathetic customer experience",
+      "reply": "We apologize for the frustration you've experienced with getting your replacement. When you have a moment, please reach out to us directly through our support link so we can review the details of your order and assist you further.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 3.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 21,
+      "query": "@AmazonHelp Yes sure.  \nBundle link £169.99: https://t.co/M5QmupwXLH   \nEcho £69.99: https://t.co/twI4bR5LlG\nHue £89.99: https://t.co/ADqfgohMUb",
+      "reply": "We appreciate your feedback and understand your disappointment regarding the bundle details and pricing. We'll be sure to pass your comments along to our team.",
+      "human_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.67
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 22,
+      "query": "@AmazonHelp Oui oui c'est déjà fait! Ils ne peuvent rien faire tant que l'enquête n'est pas ouverte apparement ....",
+      "reply": "[USERNAME] Je comprends votre situation. Une enquête est en cours afin de pouvoir procéder au remboursement de votre commande. Je vous invite à patienter le temps que celle-ci s'achève.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 23,
+      "query": "when your prime now order heads your way and then just passes your house instead :'(",
+      "reply": "I'm glad to hear it was delivered on time! Thanks for keeping us posted.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 24,
+      "query": "@AmazonHelp Why should you asking this bullish #Amazon All details I have shared now act for process [USERNAME] https://t.co/5oCoUMi5q4",
+      "reply": "We apologize for the frustration with your return pickup. Since we cannot process return arrangements or view personal details directly through Twitter, please reach out to our support team securely so we can assist you further.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 3.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 25,
+      "query": "@AmazonHelp You haven't received order details in 1 week? If not then I have think twice before next purchase on Amazon",
+      "reply": "Thanks for confirming. Our team will review your email and we'll get in touch with an update as soon as possible.",
+      "human_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.67
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 4.0
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 26,
+      "query": "Loosing trust on [USERNAME] . Worst experience with the delivery this time. #AmazonGreatIndianFestival is festival is worthless if you 1 of 2",
+      "reply": "We are sorry to hear about the delay with your delivery. Please share your details securely through our support link provided previously, and we will look into this for you right away. ^ZH",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 5.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 27,
+      "query": "@AmazonHelp Making promises and breaking them. You robbed me of rs 999.",
+      "reply": "I'm very sorry for the frustration and the delay regarding your refund. I want to look into this for you right away. Please reach out to us through our secure support channels so we can investigate the status of your refund.",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 5.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 28,
+      "query": "so the package that i needed today really took 2 hours to go from Ontario to San Bernardino lol [USERNAME]",
+      "reply": "I'm sorry for the continued delay with your package. Since it has missed the delivery estimate, please reach out to us via chat or phone so we can look into this further for you: https://www.amazon.com/gp/help/customer/contact-us",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 5.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 29,
+      "query": "[USERNAME] your customer service is useless 🤦🏽‍♂️",
+      "reply": "I'm so sorry that your experience with our support has been frustrating. Could you please share a bit more about the original issue you're facing so we can help sort it out for you?",
+      "human_scores": {
+        "correctness": 5.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 5.0
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 4.0,
+        "overall": 4.33
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (4/5), and appropriate domain correctness (4/5)."
+    },
+    {
+      "candidate_id": 30,
+      "query": "amazonさんよー俺はこれを頼んだんだけどきてみたらなんだよこの変なのなにに使うの？ https://t.co/CaMZzuk7kT",
+      "reply": "ご迷惑をおかけしております。注文した商品とは異なるものが届いたとのことで、大変申し訳ございません。返品のお手続きにつきましては、お手数をおかけしますがカスタマーサービスにて承りますので、詳細をお知らせいただけますでしょうか。",
+      "human_scores": {
+        "correctness": 4.0,
+        "empathy": 4.0,
+        "actionability": 3.0,
+        "overall": 3.67
+      },
+      "judge_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 3.33
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (4/5), clear policy-safe next steps (4/5), and appropriate domain correctness (2/5)."
+    },
+    {
+      "candidate_id": 31,
+      "query": "@AmazonHelp I don't follow. I have the Kindle app on my iPad?  All content there. Seem to work fine other then syncing. Can't find anything via link",
+      "reply": "We're sorry for the confusion! Let's get this sorted out so your Kindle app syncs properly across your devices. Please reach out to our support team so we can investigate this technical issue further.",
+      "human_scores": {
+        "correctness": 2.0,
+        "empathy": 4.0,
+        "actionability": 4.0,
+        "overall": 3.33
+      },
+      "judge_scores": {
+        "correctness": 4.0,
+        "empathy": 5.0,
+        "actionability": 5.0,
+        "overall": 4.67
+      },
+      "critique": "Grounded response addressing customer issue with professional tone (5/5), clear policy-safe next steps (5/5), and appropriate domain correctness (4/5)."
+    }
+  ]
+}
